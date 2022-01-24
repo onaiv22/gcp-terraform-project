@@ -1,3 +1,3 @@
 /* region = "us-west1"  */
-credentials = "./terraform.json"
+credentials = "./key.json"
 project = "main1-project"
