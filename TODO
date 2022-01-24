@@ -1,1 +1,9 @@
 terraform to enable api services needed
+
+Explain owner permissions currently given to service account and highlight the need to streamline this.
+
+Explain how billing account permissions are granted.
+Can be done via the command line only if organisation is set up otherwise has to be done manually through the UI.
+
+enable this manually
+serviceusage.googleapis.com

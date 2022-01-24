@@ -31,3 +31,19 @@ then
 else 
     echo "please enter yes or no. All lower case"   
 fi
+
+echo "if you wish to temporarily grant your terraform service account project owner permissions"
+echo "please enter yes, otherwise enter no "
+echo "this permission can always be amended"
+
+read option2
+if [ $option2 == "yes" ]
+then 
+    gcloud projects add-iam-policy-binding $GOOGLE_PROJECT_ID --member=serviceAccount:$ID --role=roles/owner
+elif [ $option2 == "no" ]
+then
+    echo "You will need a service account to use terraform. Please create one later"
+    exit 1
+else 
+    echo "please enter yes or no. All lower case"   
+fi

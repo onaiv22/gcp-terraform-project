@@ -1,11 +1,11 @@
 resource "google_project_service" "this" {
-    project = "your-project-id"
-    service = "iam.googleapis.com"
+    project = var.project
+    service = var.services
 
     timeouts {
         create = "30m"
-        update = "40"
+        update = "40m"
     }
 
-    disable_dependent_service = true
+    disable_dependent_services = true
 }
