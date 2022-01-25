@@ -1,5 +1,5 @@
 #!/bin/bash
-# gcloud auth login
+gcloud auth login
 
 if [[ -z ${GOOGLE_PROJECT_ID} ]]
 then 

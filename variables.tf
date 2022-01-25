@@ -16,3 +16,5 @@ variable "services" {
     description = "api services to enable"
     default = "monitoring.googleapis.com"
 }
+
+variable "permissions" {}
